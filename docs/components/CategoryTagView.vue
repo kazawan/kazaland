@@ -11,13 +11,13 @@
           @click="handleItemClick(itemValue)"
         >
           <div class="card-image">
-            <a :href="itemValue.url">
+            <a :href="baseURL + '/' + itemValue.url">
               <img :src="itemValue.img || '/noimg.jpg'" alt="">
             </a>
           </div>
           <div class="card-content">
             <h3 class="card-title">
-              <a :href="itemValue.url">{{ itemValue.title }}</a>
+              <a :href="baseURL + '/' + itemValue.url">{{ itemValue.title }}</a>
             </h3>
             <p class="card-description">{{ itemValue.des }}</p>
             <div class="card-footer">
@@ -40,13 +40,13 @@
           @click="handleItemClick(itemValue)"
         >
           <div class="card-image">
-            <a :href="itemValue.url">
+            <a :href="baseURL + itemValue.url">
               <img :src="itemValue.img || '/noimg.jpg'" alt="">
             </a>
           </div>
           <div class="card-content">
             <h3 class="card-title">
-              <a :href="itemValue.url">{{ itemValue.title }}</a>
+              <a :href="baseURL + itemValue.url">{{ itemValue.title }}</a>
             </h3>
             <p class="card-description">{{ itemValue.des }}</p>
             <div class="card-footer">
@@ -76,6 +76,7 @@
 
 <script setup>
 import { computed, ref, onMounted, onUnmounted, watch,nextTick  } from 'vue';
+const baseURL = '/kazaland'
 
 const props = defineProps({
   categoryOrTag: String,
