@@ -9,7 +9,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '🏰', link: '/' },
+      {text: 'EMOJI', link: 'https://emoji6.com/emojiall/' },
     ],
 
 
@@ -26,7 +27,7 @@ export default defineConfig({
     // sidebar: 'auto',  // 使用自动生成的侧边栏
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/kazawan' }
     ],
     search: {
       provider: 'local'
