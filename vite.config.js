@@ -9,5 +9,5 @@ export default defineConfig({
     // 确保使用ESM格式
     target: 'esnext'
   },
-  base: '/kazaland/',
+  base: '/kazaland',
 })
